@@ -1,0 +1,25 @@
+.link{
+    text-decoration: none !important;
+}
+    
+    a:link {
+        color: gray;
+      }
+      
+      /* visited link */
+      a:visited {
+        color: gray;
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+      }
+      
+      /* selected link */
+      a:active {
+        color: white;
+        text-decoration: none;
+
+      }

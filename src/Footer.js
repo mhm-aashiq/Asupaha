@@ -1,0 +1,176 @@
+// import React from 'react'
+
+
+// const Footer = () => {
+ 
+//   const year = new Date();
+//   return (
+//     <p className='text-center text-white mt-4 bg-dark footer rounded-1'> All Rights ASUPAHA <sup>&copy;</sup>  - {year.getFullYear()}</p>
+//   )
+// }
+
+// export default Footer
+
+
+import * as React from 'react';
+
+import AspectRatio from '@mui/joy/AspectRatio';
+import Box from '@mui/joy/Box';
+import IconButton from '@mui/joy/IconButton';
+import Card from '@mui/joy/Card';
+import CardContent from '@mui/joy/CardContent';
+import Divider from '@mui/joy/Divider';
+import Input from '@mui/joy/Input';
+import List from '@mui/joy/List';
+import ListSubheader from '@mui/joy/ListSubheader';
+import ListItem from '@mui/joy/ListItem';
+import ListItemButton from '@mui/joy/ListItemButton';
+import Typography from '@mui/joy/Typography';
+import Sheet from '@mui/joy/Sheet';
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import Twitter from '@mui/icons-material/Twitter';
+import Instagram from '@mui/icons-material/Instagram';
+import StartIcon from '@mui/icons-material/Start';
+import SendIcon from '@mui/icons-material/Send';
+import ColorLensRoundedIcon from '@mui/icons-material/ColorLensRounded';
+import { Link } from 'react-router-dom'
+
+
+const Footer = () =>  {
+  const year = new Date();
+  const FB = 'https://m.facebook.com/p/Asupaha-100069508187552/';
+  const Insta = 'https://www.instagram.com/asupaha/';
+  const TW = 'https://twitter.com/asupaha?lang=en';
+  const GH = 'https://github.com/mhm-aashiq';
+  const photo = require('./image/m2.jpg')
+  const [color, setColor] = React.useState('neutral');
+  return (
+    <Sheet
+      variant="solid"
+      color={color}
+      invertedColors
+      sx={{
+        ...(color !== 'neutral' && {
+          bgcolor: `${color}.800`,
+        }),
+        flexGrow: 1,
+        p: 2,
+        borderRadius: { xs: 0, sm: 'sm' },
+      }}
+    >
+      <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+        <IconButton
+          variant="soft"
+          size="sm"
+          onClick={() => {
+            const colors = ['primary', 'neutral', 'danger', 'success', 'warning'];
+
+            const nextColor = colors.indexOf(color);
+            setColor(colors[nextColor + 1] ?? colors[0]);
+          }}
+        >
+        <ColorLensRoundedIcon fontSize="small" />
+        </IconButton>
+        <Divider orientation="vertical" />
+        <p className='mt-2'>Join us via Social Media </p>
+        <StartIcon />
+        <IconButton variant="plain" sx={{ ml: 'auto', display: { xs: 'none', md: 'flex' } }}>
+        <Link to={FB} className='text-white ' target='_blank' ><FacebookRoundedIcon  /></Link> 
+        </IconButton>
+        <IconButton variant="plain">
+        <Link to={Insta} className='text-white ' target='_blank' ><Instagram /></Link>
+        </IconButton>
+        <IconButton variant="plain">
+        <Link to={TW} className='text-white ' target='_blank' ><Twitter /></Link>
+        </IconButton>
+        <IconButton variant="plain" >
+        <Link to={GH} className='text-white ' target='_blank' ><GitHubIcon /></Link>
+        </IconButton>
+        
+        {/* <Input
+          variant="soft"
+          placeholder="Type in your email"
+          type="email"
+          name="email"
+          endDecorator={
+            <IconButton variant="soft" aria-label="subscribe">
+              <SendIcon />
+            </IconButton>
+          }
+          sx={{ ml: 'auto', display: { xs: 'none', md: 'flex' } }}
+        /> */}
+      </Box>
+      <Divider sx={{ my: 2 }} />
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: { xs: 'column', md: 'row' },
+          alignItems: { md: 'flex-start' },
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
+          gap: 2,
+        }}
+      >
+        <Card
+          variant="soft"
+          size="sm"
+          sx={{
+            flexDirection: { xs: 'row', md: 'column' },
+            minWidth: { xs: '100%', md: 'auto' },
+            gap: 1,
+          }}
+        >
+          <AspectRatio
+            ratio="21/9"
+            minHeight={80}
+            sx={{ flexBasis: { xs: 200, md: 'initial' } }}
+          >
+            <img alt="" src={photo} />
+          </AspectRatio>
+          <CardContent>
+            <Typography level="body-sm">Intro to the MUI ecosystem</Typography>
+            <Typography level="body-xs">Blog post</Typography>
+          </CardContent>
+        </Card>
+        <List
+          size="sm"
+          orientation="horizontal"
+          wrap
+          sx={{ flexGrow: 0, '--ListItem-radius': '8px', '--ListItem-gap': '0px' }}
+        >
+          <ListItem nested sx={{ width: { xs: '50%', md: 140 } }}>
+            <ListSubheader sx={{ fontWeight: 'xl' }}>Social Media</ListSubheader>
+            <List>
+              <ListItem>
+                <ListItemButton>FaceBook</ListItemButton>
+              </ListItem>
+              <ListItem>
+                <ListItemButton>Instagram</ListItemButton>
+              </ListItem>
+              <ListItem>
+                <ListItemButton>Twitter</ListItemButton>
+              </ListItem>
+            </List>
+          </ListItem>
+          <ListItem nested sx={{ width: { xs: '50%', md: 180 } }}>
+            <ListSubheader sx={{ fontWeight: 'xl' }}>Sitemap</ListSubheader>
+            <List sx={{ '--ListItemDecorator-size': '32px' }}>
+              <ListItem>
+                <ListItemButton>Home</ListItemButton>
+              </ListItem>
+              <ListItem>
+                <ListItemButton>Photos</ListItemButton>
+              </ListItem>
+              <ListItem>
+                <ListItemButton>About us</ListItemButton>
+              </ListItem>
+            </List>
+          </ListItem>
+        </List>
+      </Box>
+      <p className='text-center text-white mt-4'>&copy; All Rights Reserved ASUPAHA   - {year.getFullYear()}</p>
+    </Sheet>
+  );
+}
+export default Footer
