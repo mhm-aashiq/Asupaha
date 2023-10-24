@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Asupaha/static/css/main.c97aeea5.css",
+    "main.js": "/Asupaha/static/js/main.1db02d73.js",
+    "static/media/entry.mp4": "/Asupaha/static/media/entry.cb17b24b7435cf876a33.mp4",
+    "static/media/hi.jpg": "/Asupaha/static/media/hi.0993f0a8f3a1a6b0c9bf.jpg",
+    "static/media/m4.jpg": "/Asupaha/static/media/m4.69f43f5dca1543bed683.jpg",
+    "static/media/m3.jpg": "/Asupaha/static/media/m3.a917c284bb0f072cfda5.jpg",
+    "static/media/m2.jpg": "/Asupaha/static/media/m2.239b530cf5a0e744da4c.jpg",
+    "index.html": "/Asupaha/index.html",
+    "main.c97aeea5.css.map": "/Asupaha/static/css/main.c97aeea5.css.map",
+    "main.1db02d73.js.map": "/Asupaha/static/js/main.1db02d73.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c97aeea5.css",
+    "static/js/main.1db02d73.js"
+  ]
+}
