@@ -143,13 +143,13 @@ const Footer = () =>  {
             <ListSubheader sx={{ fontWeight: 'xl' }}>Sitemap</ListSubheader>
             <List sx={{ '--ListItemDecorator-size': '32px' }}>
               <ListItem>
-              <Link className='text-white' to='/Asupaha/'> <ListItemButton>Home</ListItemButton></Link>
+              <Link className='text-white' to='/'> <ListItemButton>Home</ListItemButton></Link>
               </ListItem>
               <ListItem>
-              <Link className='text-white' to='/Asupaha/Photos'> <ListItemButton>Photos</ListItemButton></Link>
+              <Link className='text-white' to='photos'> <ListItemButton>Photos</ListItemButton></Link>
               </ListItem>
               <ListItem>
-              <Link className='text-white' to='/Asupaha/aboutus'>  <ListItemButton>About us</ListItemButton></Link>
+              <Link className='text-white' to='aboutus'>  <ListItemButton>About us</ListItemButton></Link>
               </ListItem>
             </List>
           </ListItem>

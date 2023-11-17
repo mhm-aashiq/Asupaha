@@ -17,13 +17,13 @@ function App() {
       <Navbar />
      
       <Routes>
-      <Route path='/Asupaha' exact  element={<Main />}  />
-      <Route path='/Asupaha/aboutus' element={ <AboutUs />} />
-      <Route path='/Asupaha/Photos' element={ <Photos /> } />
-      <Route path='/Asupaha/Photos/night' element={ <Night /> } />
-      <Route path='/Asupaha/Photos/walk' element={ <Walk /> } />
-      <Route path='/Asupaha/Photos/marathon' element={ <Marathon /> } />
-      <Route path='/Asupaha/Photos/futsal' element={ <Futsal /> } />
+      <Route path='/' exact  element={<Main />}  />
+      <Route path='aboutus' element={ <AboutUs />} />
+      <Route path='Photos' element={ <Photos /> } />
+      <Route path='Photos/night' element={ <Night /> } />
+      <Route path='Photos/walk' element={ <Walk /> } />
+      <Route path='Photos/marathon' element={ <Marathon /> } />
+      <Route path='Photos/futsal' element={ <Futsal /> } />
       </Routes>
        <Footer /> 
     </div>
