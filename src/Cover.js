@@ -1,15 +1,29 @@
-import React from 'react'
-import Image from 'react-bootstrap/Image';
+import React, { useEffect, useState } from 'react'
+
 
 const Cover = () => {
 
-    const photo = require('./image/hi.jpg');
-    const photo1 = require('./image/m3.jpg');
-    const photo2 = require('./image/m4.jpg');
+    const photo = require('./image/Night/23.jpg');
+    const photo1 = require('./image/Night/15.jpg');
+    const photo2 = require('./image/Night/24.jpg');
+
+    const images = [photo,photo1,photo2]
+
+    const [currentImage, setCurrentImage] = useState(photo1);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentImage(images[Math.floor(Math.random() * 3)]);
+        }, 3000)
+        
+        return () => clearInterval(intervalId);
+    }, [])
+
 
   return (
     <div>
-     <Image src={photo1} className='img-fluid rounded  mt-1' fluid />
+      
+     <img src={currentImage} className='img-fluid rounded  mt-1'  />
     </div>
        
   )

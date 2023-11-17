@@ -1,25 +1,35 @@
 .link{
     text-decoration: none !important;
+    padding-left: 12px;
+    
+}
+@media screen and (max-width: 991px) {
+  .link {
+  padding-top: 10px;
+  }
 }
     
-    a:link {
-        color: gray;
+Nav{
+  display: flex;
+}
+.link:link {
+        color: gray !important;
       }
       
       /* visited link */
-      a:visited {
-        color: gray;
+      .link:visited {
+        color: gray !important;
       }
       
       /* mouse over link */
-      a:hover {
-        color: rgb(255, 255, 255);
-        text-decoration: underline;
+      .link:hover {
+        color: rgb(255, 255, 255) !important;
+        text-decoration: underline !important;
       }
       
       /* selected link */
-      a:active {
-        color: white;
-        text-decoration: none;
+      .link:active {
+        color: white !important;
+        text-decoration: none !important;
 
       }

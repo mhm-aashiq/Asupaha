@@ -6,11 +6,12 @@ import Navbarr from 'react-bootstrap/Navbar';
 
 
 const Navbar = () => {
+  const logo = require('./image/logo.PNG')
   return (
     <Navbarr expand="lg" bg="dark" data-bs-theme="dark" className="bg-body-tertiary rounded">
       <Container>
        
-        <Navbarr.Brand > <Link to='/' className='link ' >ASUPAHA</Link></Navbarr.Brand>
+        <Navbarr.Brand > <Link to='/' className='link rounded ' ><img src={logo} width='90px'  /></Link></Navbarr.Brand>
         <Navbarr.Toggle aria-controls="basic-navbar-nav" />
         <Navbarr.Collapse id="basic-navbar-nav" className="ml-auto" >
           <Nav >
@@ -19,9 +20,9 @@ const Navbar = () => {
            <Nav className="ms-auto ">
           
        
-          <a >   <Nav.Link> <Link to='/' className='link ' >Home</Link> </Nav.Link></a> 
-          <a ><Nav.Link><Link to='/photos' className='link'  >Photos</Link></Nav.Link></a> 
-          <a ><Nav.Link> <Link to='/aboutus' className='link' >About Us</Link> </Nav.Link></a> 
+             <Link to='/Asupaha/'  className='link ' >Home </Link>
+          <Link to='/Asupaha/photos' className='link'  >Photos</Link>
+          <Link to='/Asupaha/aboutus' className='link' >About Us </Link>
       
           </Nav>
         </Navbarr.Collapse>

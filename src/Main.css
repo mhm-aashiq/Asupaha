@@ -1,0 +1,17 @@
+@media screen and (max-width: 991px) {
+    .col-lg-4 
+    {
+      display: block;
+      margin-left: 10%;
+      margin-right: auto;
+      width: 100%;
+
+  
+    }
+    .col-lg-8{
+      text-align: justify;
+    }
+  }
+  .col-lg-8 {
+    text-align: justify;
+  }

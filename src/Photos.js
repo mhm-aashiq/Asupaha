@@ -9,11 +9,6 @@ import Video from'./videos/entry.mp4'
 import ReactTyped from "react-typed";
 
 const Photos = () => {
-  
-  // const photo = require('./image/hi.jpg');
-  // const photo1 = require('./image/m3.jpg');
-  // const photo2 = require('./image/m4.jpg');
-  // const video = require('./videos/entry.mp4');
   return (
     <div className='row pt-4 pb-3'>
 
@@ -72,7 +67,7 @@ const Photos = () => {
         />
       </CardCover>  </Link>
       <CardContent>
-      <Link> <Typography
+      <Link to='night' className='link'> <Typography
           level="body-lg"
           fontWeight="lg"
           textColor="#fff"
@@ -80,7 +75,7 @@ const Photos = () => {
 
           style={{textDecoration:'none'}}
         >
-          Image
+          Asupaha Night 
         </Typography></Link>
       </CardContent>
     </Card> 
@@ -96,7 +91,7 @@ const Photos = () => {
         />
       </CardCover>  </Link>
       <CardContent>
-      <Link> <Typography
+      <Link to='walk' className='link'> <Typography
           level="body-lg"
           fontWeight="lg"
           textColor="#fff"
@@ -104,7 +99,7 @@ const Photos = () => {
 
           style={{textDecoration:'none'}}
         >
-          Image
+          Zahira Walk
         </Typography></Link>
       </CardContent>
     </Card>
@@ -119,7 +114,7 @@ const Photos = () => {
         />
       </CardCover>  </Link>
       <CardContent>
-      <Link> <Typography
+      <Link to='marathon' className='link'> <Typography
           level="body-lg"
           fontWeight="lg"
           textColor="#fff"
@@ -127,7 +122,7 @@ const Photos = () => {
 
           style={{textDecoration:'none'}}
         >
-          Image
+          Zahira Marathon
         </Typography></Link>
       </CardContent>
     </Card>
@@ -143,7 +138,7 @@ const Photos = () => {
         />
       </CardCover>  </Link>
       <CardContent>
-      <Link> <Typography
+      <Link to='futsal' className='link'> <Typography
           level="body-lg"
           fontWeight="lg"
           textColor="#fff"
@@ -151,7 +146,7 @@ const Photos = () => {
 
           style={{textDecoration:'none'}}
         >
-          Image
+          Futsal
         </Typography></Link>
       </CardContent>
     </Card>

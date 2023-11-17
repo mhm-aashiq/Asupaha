@@ -1,16 +1,3 @@
-// import React from 'react'
-
-
-// const Footer = () => {
- 
-//   const year = new Date();
-//   return (
-//     <p className='text-center text-white mt-4 bg-dark footer rounded-1'> All Rights ASUPAHA <sup>&copy;</sup>  - {year.getFullYear()}</p>
-//   )
-// }
-
-// export default Footer
-
 
 import * as React from 'react';
 
@@ -32,7 +19,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Twitter from '@mui/icons-material/Twitter';
 import Instagram from '@mui/icons-material/Instagram';
 import StartIcon from '@mui/icons-material/Start';
-import SendIcon from '@mui/icons-material/Send';
 import ColorLensRoundedIcon from '@mui/icons-material/ColorLensRounded';
 import { Link } from 'react-router-dom'
 
@@ -64,7 +50,7 @@ const Footer = () =>  {
           variant="soft"
           size="sm"
           onClick={() => {
-            const colors = ['primary', 'neutral', 'danger', 'success', 'warning'];
+            const colors = ['primary','neutral', 'danger', 'success', 'warning'];
 
             const nextColor = colors.indexOf(color);
             setColor(colors[nextColor + 1] ?? colors[0]);
@@ -112,7 +98,7 @@ const Footer = () =>  {
           gap: 2,
         }}
       >
-        <Card
+        {/* <Card
           variant="soft"
           size="sm"
           sx={{
@@ -132,7 +118,7 @@ const Footer = () =>  {
             <Typography level="body-sm">Intro to the MUI ecosystem</Typography>
             <Typography level="body-xs">Blog post</Typography>
           </CardContent>
-        </Card>
+        </Card> */}
         <List
           size="sm"
           orientation="horizontal"
@@ -143,13 +129,13 @@ const Footer = () =>  {
             <ListSubheader sx={{ fontWeight: 'xl' }}>Social Media</ListSubheader>
             <List>
               <ListItem>
-                <ListItemButton>FaceBook</ListItemButton>
+               <Link to={FB} className='text-white' target='_blank'> <ListItemButton>FaceBook</ListItemButton></Link>
               </ListItem>
               <ListItem>
-                <ListItemButton>Instagram</ListItemButton>
+              <Link to={Insta} className='text-white' target='_blank'> <ListItemButton>Instagram</ListItemButton></Link>
               </ListItem>
               <ListItem>
-                <ListItemButton>Twitter</ListItemButton>
+              <Link to={TW} className='text-white' target='_blank'>  <ListItemButton>Twitter</ListItemButton></Link>
               </ListItem>
             </List>
           </ListItem>
@@ -157,13 +143,13 @@ const Footer = () =>  {
             <ListSubheader sx={{ fontWeight: 'xl' }}>Sitemap</ListSubheader>
             <List sx={{ '--ListItemDecorator-size': '32px' }}>
               <ListItem>
-                <ListItemButton>Home</ListItemButton>
+              <Link className='text-white' to='/Asupaha/'> <ListItemButton>Home</ListItemButton></Link>
               </ListItem>
               <ListItem>
-                <ListItemButton>Photos</ListItemButton>
+              <Link className='text-white' to='/Asupaha/Photos'> <ListItemButton>Photos</ListItemButton></Link>
               </ListItem>
               <ListItem>
-                <ListItemButton>About us</ListItemButton>
+              <Link className='text-white' to='/Asupaha/aboutus'>  <ListItemButton>About us</ListItemButton></Link>
               </ListItem>
             </List>
           </ListItem>

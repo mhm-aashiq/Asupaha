@@ -7,15 +7,16 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Coruosal from './Coruosal';
+import './Main.css'
 
 
 const Main = () => {
 
-  const photo = require('./image/hi.jpg');
-  const photo1 = require('./image/m3.jpg');
-  const photo2 = require('./image/m4.jpg');
+  const photo = require('./image/Night/18.jpg');
+  const photo1 = require('./image/Walk/1.jpg');
+  const photo2 = require('./image/Night/9.jpg');
 return (
-    <>
+    <div>
     <Coruosal />
   <div className="row mt-4 pb-3">
    
@@ -30,8 +31,10 @@ return (
         /></h2>
 
          <hr />
+  </div>
 
-    <div className="col-lg-4 col-md-4 col-sm-4">
+    <div className="row mt-4"> 
+    <div className='col-lg-4'>
 
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -40,24 +43,34 @@ return (
         height="200"
         image={photo}
       />
-      <CardContent>
+   
+    </Card>
+
+    </div>
+    <div className='col-lg-8'>
+      <Card sx={{ minHeight: 200 }}>
+    <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+        Lizard
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          species, ranging across all continents except Antarctica Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorem sequi, magni sapiente omnis ipsa fugit aperiam numquam, consequuntur consectetur molestiae voluptate debitis cumque tempore facere laudantium ab, est excepturi?
         </Typography>
       </CardContent>
       <CardActions>
         <Button size="small">Share</Button>
         <Button size="small">Learn More</Button>
       </CardActions>
-    </Card>
-
-      
+      </Card>
     </div>
-    <div className=" col-lg-4 col-md-4 col-sm-4 border-start" >
+   
+    </div>
+
+
+    <div className="row mt-4"> 
+    <div className='col-lg-4'>
+
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
@@ -65,23 +78,33 @@ return (
         height="200"
         image={photo1}
       />
-      <CardContent>
+   
+    </Card>
+
+    </div>
+    <div className='col-lg-8'>
+    <Card sx={{ minHeight: 200 }}>
+    <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           Lizard
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          species, ranging across all continents except Antarctica Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorem sequi, magni sapiente omnis ipsa fugit aperiam numquam, consequuntur consectetur molestiae voluptate debitis cumque tempore facere laudantium ab, est excepturi?
         </Typography>
       </CardContent>
       <CardActions>
         <Button size="small">Share</Button>
         <Button size="small">Learn More</Button>
       </CardActions>
-    </Card>
-      {/* <video className='h-50 w-100 ' style={{objectFit: 'cover !important'}}  src = {Video} loop={true} controls autoPlay={true} muted={true} /> */}
+      </Card>
     </div>
-    <div className=" col-lg-4 col-md-4 col-sm-4 border-start" >
+   
+    </div>
+
+    <div className="row mt-4 mb-4"> 
+    <div className='col-lg-4'>
+
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
@@ -89,30 +112,32 @@ return (
         height="200"
         image={photo2}
       />
-      <CardContent>
+   
+    </Card>
+
+    </div>
+    <div className='col-lg-8'>
+    <Card sx={{ minHeight: 200 }}>
+    <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           Lizard
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          species, ranging across all continents except Antarctica Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorem sequi, magni sapiente omnis ipsa fugit aperiam numquam, consequuntur consectetur molestiae voluptate debitis cumque tempore facere laudantium ab, est excepturi?
         </Typography>
       </CardContent>
       <CardActions>
         <Button size="small">Share</Button>
         <Button size="small">Learn More</Button>
       </CardActions>
-    </Card> 
+      </Card>
+    </div>
+   
     </div>
 
-    
-    
   </div>
-  </>
   
-  
-
-    
   )
 }
 
