@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Asupaha/static/css/main.5ac26517.css",
-    "main.js": "/Asupaha/static/js/main.88f91920.js",
+    "main.js": "/Asupaha/static/js/main.6fb61629.js",
     "static/media/entry.mp4": "/Asupaha/static/media/entry.cb17b24b7435cf876a33.mp4",
     "static/media/1.jpg": "/Asupaha/static/media/1.738dd3c45ba654ba351b.jpg",
     "static/media/15.jpg": "/Asupaha/static/media/15.868fc866cbe769a5b82c.jpg",
@@ -17,10 +17,10 @@
     "static/media/logo.PNG": "/Asupaha/static/media/logo.0ac10e479294854a741b.PNG",
     "index.html": "/Asupaha/index.html",
     "main.5ac26517.css.map": "/Asupaha/static/css/main.5ac26517.css.map",
-    "main.88f91920.js.map": "/Asupaha/static/js/main.88f91920.js.map"
+    "main.6fb61629.js.map": "/Asupaha/static/js/main.6fb61629.js.map"
   },
   "entrypoints": [
     "static/css/main.5ac26517.css",
-    "static/js/main.88f91920.js"
+    "static/js/main.6fb61629.js"
   ]
 }
