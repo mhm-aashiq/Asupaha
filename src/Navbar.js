@@ -20,9 +20,9 @@ const Navbar = () => {
            <Nav className="ms-auto ">
           
        
-             <Link to='/' className='link ' >Home </Link>
-          <Link to='/photos' className='link'  >Photos</Link>
-          <Link to='/aboutus' className='link' >About Us </Link>
+             <Link to='/Asupaha' className='link ' >Home </Link>
+          <Link to='/Asupaha/photos' className='link'  >Photos</Link>
+          <Link to='/Asupaha/aboutus' className='link' >About Us </Link>
       
           </Nav>
         </Navbarr.Collapse>
@@ -30,13 +30,6 @@ const Navbar = () => {
     </Navbarr>
   );
 }
-<ul>
-       
-       <li><Link to='/'>Home</Link></li>
-       <li><Link to='/newpost'>New Post</Link></li>
-       <li><Link to='/about'>About</Link></li>
-      
-     
-     </ul>
+
 
 export default Navbar;
