@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/Asupaha/static/css/main.c97aeea5.css",
-    "main.js": "/Asupaha/static/js/main.1db02d73.js",
+    "main.css": "/Asupaha/static/css/main.5ac26517.css",
+    "main.js": "/Asupaha/static/js/main.88f91920.js",
     "static/media/entry.mp4": "/Asupaha/static/media/entry.cb17b24b7435cf876a33.mp4",
-    "static/media/hi.jpg": "/Asupaha/static/media/hi.0993f0a8f3a1a6b0c9bf.jpg",
+    "static/media/1.jpg": "/Asupaha/static/media/1.738dd3c45ba654ba351b.jpg",
+    "static/media/15.jpg": "/Asupaha/static/media/15.868fc866cbe769a5b82c.jpg",
+    "static/media/23.jpg": "/Asupaha/static/media/23.560af9119e4802d4897d.jpg",
     "static/media/m4.jpg": "/Asupaha/static/media/m4.69f43f5dca1543bed683.jpg",
-    "static/media/m3.jpg": "/Asupaha/static/media/m3.a917c284bb0f072cfda5.jpg",
+    "static/media/9.jpg": "/Asupaha/static/media/9.655f5e71de6900d052d8.jpg",
+    "static/media/8.jpg": "/Asupaha/static/media/8.fc51bc24267916d16cc8.jpg",
+    "static/media/24.jpg": "/Asupaha/static/media/24.4b3ceed8bf3515079ff7.jpg",
+    "static/media/6.jpg": "/Asupaha/static/media/6.5b9d0f619a23b3828ec3.jpg",
+    "static/media/2.jpg": "/Asupaha/static/media/2.1c550df4823055b3809f.jpg",
+    "static/media/18.jpg": "/Asupaha/static/media/18.27a32c938ecd8a07549d.jpg",
     "static/media/m2.jpg": "/Asupaha/static/media/m2.239b530cf5a0e744da4c.jpg",
+    "static/media/logo.PNG": "/Asupaha/static/media/logo.0ac10e479294854a741b.PNG",
     "index.html": "/Asupaha/index.html",
-    "main.c97aeea5.css.map": "/Asupaha/static/css/main.c97aeea5.css.map",
-    "main.1db02d73.js.map": "/Asupaha/static/js/main.1db02d73.js.map"
+    "main.5ac26517.css.map": "/Asupaha/static/css/main.5ac26517.css.map",
+    "main.88f91920.js.map": "/Asupaha/static/js/main.88f91920.js.map"
   },
   "entrypoints": [
-    "static/css/main.c97aeea5.css",
-    "static/js/main.1db02d73.js"
+    "static/css/main.5ac26517.css",
+    "static/js/main.88f91920.js"
   ]
 }
